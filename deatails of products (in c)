@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <conio.h>
+
+struct item
+{
+  int item_no ;
+  int item_price ;
+  char item_name[10] ;
+  int quantity ;
+};
+
+int main()
+{
+  int m , i ;
+  struct item record [100] ;
+  printf("Enter no of items") ;
+  scanf("%d", &m) ;
+  for(i = 1 ; i <= m ; i++)
+  {
+    printf("enter item no\t") ;
+    scanf("%d", &record[i].item_no ) ;
+    printf("enter item price\t") ;
+    scanf("%d", &record[i].item_price ) ;
+    printf("enter item name\t") ;
+    scanf("%s", &record[i].item_name ) ;
+    printf("enter item quantity\t") ;
+    scanf("%d", &record[i].quantity ) ;
+  }
+  printf("\n" );
+  printf("Item no\titem price\titem name\titem quantity \n" );
+  for(i = 1 ; i <= m ; i++)
+  {
+    printf("%d\t%d\t\t%s\t\t%d", record[i].item_no , record[i].item_price , record[i].item_name , record[i].quantity );
+    printf("\n");
+  }
+
+  getch() ;
+  return 0 ;
+}
