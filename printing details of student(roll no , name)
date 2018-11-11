@@ -1,0 +1,35 @@
+#include <iostream>
+#include <conio.h>
+
+class student
+{
+  int rollno ;
+  char name[30] ;
+
+  public :
+
+  void data()
+  {
+    std::cout << "Enter rollno \n" << '\n';
+    std::cin >> rollno ;
+    std::cout << "Enter name \n" << '\n';
+    std::cin >> name ;
+  }
+
+  void display()
+  {
+    std::cout << "\n roll no : " << rollno << "\tname : " << name  << '\n';
+  }
+};
+
+int main()
+{
+
+  student i1 , i2 ;
+  i1.data() ;
+  i2.data() ;
+  i1.display() ;
+  i2.display() ;
+  getch() ;
+  return 0 ;
+}
