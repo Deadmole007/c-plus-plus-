@@ -1,2 +1,2 @@
-# object-oriented-programming-language-c-
+# object-oriented-programming-language-c++-
 class experiments of object oriented programming language
