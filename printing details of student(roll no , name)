@@ -10,15 +10,15 @@ class student
 
   void data()
   {
-    std::cout << "Enter rollno \n" << '\n';
-    std::cin >> rollno ;
-    std::cout << "Enter name \n" << '\n';
-    std::cin >> name ;
+    cout << "Enter rollno \n" << '\n';
+    cin >> rollno ;
+    cout << "Enter name \n" << '\n';
+    cin >> name ;
   }
 
   void display()
   {
-    std::cout << "\n roll no : " << rollno << "\tname : " << name  << '\n';
+    cout << "\n roll no : " << rollno << "\tname : " << name  << '\n';
   }
 };
 
